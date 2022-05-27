@@ -18,8 +18,8 @@ spec:
         image: nginx:latest
         volumeMounts:
         - name: config-volume
-          mountPath: /usr/share/nginx/html 
+          mountPath: /usr/share/nginx/html
       volumes:
       - name: config-volume
-        configMap: 
+        configMap:
           name: myapp
